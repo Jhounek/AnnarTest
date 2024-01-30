@@ -1,0 +1,14 @@
+<div class="container flex justify-center mx-auto mt-16">
+  <div class="flex justify-center md:w-2/5 sm:w-3/5">
+    <input type="text" placeholder="Type here" class="input input-bordered bg-neutral input-secondary w-full max-w-xs" />
+  </div>
+</div>
+<div class="container flex justify-center mx-auto mt-20 md:mt-16">
+  <div class="grid gap-4 md:grid-cols-3 sm:grid-col-1 grid-rows-3">
+    <app-user-card
+      *ngFor="let user of users"
+      [user] = "user"
+    >
+    </app-user-card>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="card card-compact md:w-76 md:max-xl:w-60 sm:w-96 bg-base-300 shadow-xl">
+  <figure><img src="https://i.pinimg.com/originals/89/90/48/899048ab0cc455154006fdb9676964b3.jpg" [alt]="user.name" /></figure>
+  <div class="card-body">
+    <h2 class="card-title">{{user.name}}</h2>
+    <p>{{user.email}}</p>
+    <div class="card-actions justify-end">
+      <button class="btn btn-primary" (click)="findUser(user.id)">Check more</button>
+    </div>
+  </div>
+</div>
+
